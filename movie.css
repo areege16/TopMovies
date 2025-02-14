@@ -1,0 +1,125 @@
+body{
+    font-family: 'segoe ui light';
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1c1c1c, #000) no-repeat;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item{
+   /* position: relative;
+   display: flex;
+   justify-content: center; */
+   margin-top: 15px;
+   cursor: pointer;
+   border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    background-color: #1e1e1e;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.item img:hover {
+    opacity: 0.9;
+}
+
+.item h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+.item p {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: justify;
+    height: 70px;
+
+}
+
+
+.item-caption{
+    text-align: center;
+    background: white;
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    /* left: 10%; */
+    
+}
+.lightbox-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.85);
+    z-index: 1000;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.light-box-items{
+    position: relative;;
+    width: 60%;
+    height: 80%;
+    background-image: url('imgs/product-6.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    
+}
+
+.light-box-items i{
+    font: 1.1em;
+    margin: 0.5em;
+    cursor: pointer;
+}
+#close{
+ position: absolute;
+ top: 5px;
+ right: 10px;
+ font-size: 40px;
+ font-weight: bolder;
+ color: #df0b0b;
+ cursor: pointer;
+}
+#prev , #next{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 20px;
+    user-select: none;
+    color: #ffdd57;
+}
+#prev:hover, 
+#next:hover {
+    color: #fff;
+}
